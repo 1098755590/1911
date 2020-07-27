@@ -1,0 +1,58 @@
+/* html,body{
+	width: 100%;
+	height: 100%;
+} */
+a{
+	text-decoration: none;
+	color: #000000;
+}
+.main{
+	width: 1150px;
+	height: 560px;
+/* 	background-color: aqua; */
+	margin: 0 auto;
+    border: 2px solid #E8E8E8;
+}
+.main>div{
+	float: left;
+}
+.details_1>a>img{
+	height: 500px;
+	margin-top: 30px;
+	margin-left: 20px;
+}
+.de_list{
+	margin-left: 20px;
+}
+.de_name{
+	margin-top: 30px;
+	margin-left: 20px;
+	font-size: 20px;
+}
+.de_price{
+	margin-top: 20px;
+	width: 486px;
+	height:55px;
+	background-color: #FFF2E8;
+}
+.de_price>span{
+	font-size: 35px;
+	color: #FF6700;
+	font-weight: 900;
+	margin-left: 20px;
+}
+.de_size{
+	margin-top: 20px;
+}
+.de_color{
+	margin-top: 20px;
+}
+.de_nums{
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.de_mai>span{
+	margin-top: 20px;
+	float: left;
+}

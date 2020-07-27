@@ -1,0 +1,114 @@
+body{
+	/* background-image: url(../img/details&gouwu/雪花1.gif); */
+	/* background-repeat:no-repeat; */
+	/* background-size:100% 100%; */
+	/* -moz-background-size:100% 100%; */
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #000000;
+}
+.main{
+	width: 1200px;
+	height: 1280px;
+/* 	background-color: aqua; */
+    border:2px solid #C9C9C9 ;
+	margin: 0 auto;
+}
+.quanxuan>ul>li{
+	float: left;
+}
+.quanxuan1{
+	width: 80px;
+}
+.shangpinxinxi{
+	width: 530px;
+}
+.danjia{
+	width: 130px;
+}
+.shuliang{
+	width: 130px;
+}
+.jine{
+	width: 130px;
+}
+.caozuo{
+	width: 150px;
+}
+.quanxuan{
+	padding-bottom: 30px;
+}
+.dianpu{	
+	margin-left: 40px;
+}
+.xiangxi>ul>li{
+	float: left;
+}
+.xiangxi{
+	padding-top: 10px;
+	padding-bottom: 30px;
+	margin-bottom: 10px;
+	height:85px ;	
+	background-color: #F0F0F0;
+}
+.lianbao>a{
+	position: relative;
+	left: 90px;
+	top: -20px;
+}
+.shubiao{
+	width: 60px;
+	height: 60px;
+}
+/* ------------付款样式 */
+.main_hong{
+	width: 1200px;
+	height: 140px;
+/* 	background-color: aqua; */
+}
+.hongse{
+	width: 600px;
+	height: 130px;
+	border: 1px solid red;
+	float: right;
+	margin-top: 10px;
+}
+.jiacu{
+	font-size: 13px;
+	
+}
+.teshu1{
+	font-size: 30px;
+	color: #999999;
+}
+.qian{
+	font-size: 30px;
+	color: #FF0036;
+	font-weight: 900;
+}
+.jiacu2{
+	font-weight: 900;
+}
+.shifu{
+	float: right;
+}
+.jisong{
+	float: right;
+	margin-top:15px ;
+}
+.shouhuo{
+	float: right;
+}
+.clear{
+	clear: right;
+}
+.tijiao{
+	margin-top: 1px;
+	width: 185px;
+	margin-left: 1015px;
+	
+}

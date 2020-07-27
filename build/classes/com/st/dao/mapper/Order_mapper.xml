@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.st.dao.IOrderDao">
+
+<insert id="addaorder" >
+ insert into orderform (username,goods_id,count,address) values (#{username},#{goods_id},#{count},#{address}) 
+</insert>
+
+<insert id="addtocart" >
+   insert into shoppingcart (username,goods_id,count,address) values (#{username},#{goods_id},#{countinput},#{address});  
+</insert>
+
+<delete id="buyallgoods">
+  delete from shoppingcart where username=#{username};
+
+</delete>
+<select id="getOrderlist" resultType="com.st.bean.orderform">
+ select * from orderform where username=#{username};
+
+</select>
+
+<delete id="order_del">
+  delete from orderform where id=#{id};
+
+</delete>
+</mapper>

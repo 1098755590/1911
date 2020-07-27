@@ -1,0 +1,52 @@
+@charset "UTF-8";
+body{
+	background-color:#F9F9F9;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+#main>img{
+	width: 50px;
+	height: 50px;
+/* 	text-align: center;
+	margin: 0px auto;
+	padding: 0 auto; */
+}
+#main>div{
+	text-align: center;	
+}
+#main_zhuce{
+	font-size: 33px;
+	margin-top: 40px;
+	margin-bottom: 25px;
+}
+.guojia{
+	margin-left: -270px;
+}
+.chenggong{
+	margin-left: -50px;
+	margin-bottom: 20px;
+}
+.shoujicode{
+	margin-left: -280px;
+}
+.main_ul>li>input{
+	margin: 10px 0px;
+}
+#sec_deng{
+	margin-bottom: 65px;
+}
+.yiyuedu>a{
+	font-weight:700;
+	color: #000000;
+}
+.yiyuedu{
+	color:#9B9B9B;
+}
+.yiyuedu:hover{
+	cursor: pointer;
+}

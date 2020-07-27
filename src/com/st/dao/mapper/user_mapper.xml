@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.st.dao.IUserDao">
+<insert id="zengUser" parameterType="com.st.bean.User">
+insert into user (userid,username,password,status) values 
+ (#{userid},#{username},#{password},'正常')
+</insert>
+<delete id="delUser" parameterType="com.st.bean.User">
+delete from user where userid='${userid}'
+</delete>
+<update id="updateUser" parameterType="com.st.bean.User">
+update user set username=#{username},password=#{userpass} where userid=#{userid}
+</update>
+<select id="getUser"   resultType="com.st.bean.User">
+select * from user where userid like '%${checktext}%'
+or username like '%${checktext}%'
+or password like '%${checktext}%'
+or status like '%${checktext}%'
+limit ${start},${limit}
+</select>
+
+<select id="cha_User" parameterType="java.util.Map"   resultType="com.st.bean.User">
+select * from user where userid like '%${checktext}%'
+or username like '%${checktext}%'
+or password like '%${checktext}%'
+
+</select>
+
+<select id="cha_someone" parameterType="java.util.Map"   resultType="com.st.bean.User">
+select * from user where username=#{username}
+
+
+</select>
+
+<select id="getCount" parameterType="java.util.Map"   resultType="int">
+select count(*) from user where userid like '%${checktext}%'
+or username like '%${checktext}%'
+or password like '%${checktext}%'
+
+</select>
+
+<select id="getAdmin" parameterType="java.util.Map" resultType="com.st.bean.Admin">
+select * from administrator where account=#{zh}
+</select>
+<!-- 管理员管理 -->
+<update id="updatepassword" parameterType="com.st.bean.Admin">
+update administrator set password=#{password} where admin_id=#{admin_id}
+</update>
+
+<insert id="add_admin">
+insert into administrator (admin_id,account,password) values (#{admin_id},#{account},#{password})
+</insert>
+
+<select id="get_adminCount"  resultType="int">
+select count(*) from administrator
+
+</select>
+
+<update id="change_user_status" parameterType="java.util.Map" >
+update user set status=#{status} where userid=#{userid}
+</update>
+
+<select id="getaauser" parameterType="java.util.Map"   resultType="com.st.bean.User">
+ select * from user where username=#{username};
+
+</select>
+
+<update id="updateupassword" parameterType="com.st.bean.User">
+ update user set password=#{password} where userid=#{userid};
+</update>
+</mapper>
