@@ -20,7 +20,9 @@ import com.st.service.IOrderService;
 
 @Controller
 public class AddressAction {
-   
+   /**
+    * ÒµÎñ²ã
+    */
 	@Autowired
 	IAddressService addressService;
 	
