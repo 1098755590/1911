@@ -25,7 +25,7 @@ import com.st.service.IUserService;
 
 @Controller
 public class AdminAction {
-
+     //AdminÒµÎñ²ã
 	@Autowired
 	IUserService userService;
 
